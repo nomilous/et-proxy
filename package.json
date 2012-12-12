@@ -1,0 +1,34 @@
+{
+  "name": "et-proxy",
+  "description": "a rest proxy",
+  "version": "0.0.0",
+  "author": {
+    "name": "nomilous",
+    "email": "nomilous@gmail.com"
+  },
+  "dependencies": {
+    "et": "~0.0.2"
+  },
+  "devDependencies": {
+    "which": "~1.0.5",
+    "watchit": "0.0.4",
+    "should": "~1.2.1",
+    "coffee-script": "~1.4.0",
+    "jasmine-node": "~1.0.28",
+    "express": "~3.0.4"
+  },
+  "keywords": [
+    "proxy",
+    "rest"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nomilous/et-proxy.git"
+  },
+  "main": "./lib/proxy",
+  "bin": {},
+  "scripts": {},
+  "engines": {
+    "node": "*"
+  }
+}
