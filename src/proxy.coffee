@@ -2,15 +2,21 @@ module.exports =
 
     Proxy : class Proxy
 
+
+
         constructor: (config) -> 
 
-            console.log 'init EtProxy with ', config
+            console.log 'init Proxy'
 
-        get: (path, params, callback) -> 
+            @url = config.url
 
-            console.log 'Proxy.get', path, params, callback
 
-            error = null
+        get: (path, callback, params) -> 
 
-            callback "fake data", error
+            console.log 'Proxy.get', @url + path, callback
 
+            require('http').get @url + path, (res) ->
+        
+                res.on 'data', (data) -> 
+
+                    callback data
